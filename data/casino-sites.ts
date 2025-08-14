@@ -72,7 +72,7 @@ export const casinoSites: CasinoSite[] = [
     name: "BoyleSports Games",
     logo: "/boyle.png",
     score: 4.3,
-    bonus: "Bet €10 Get €60 Casino Bonus",
+    bonus: "Bet €10 Get €50 Casino Bonus",
     features: ["Irish Owned", "GAA Specials", "Local Support"],
     paymentMethods: ["Visa/Mastercard", "PayPal", "Bank Transfer"],
     link: "https://www.boylesports.com/",
