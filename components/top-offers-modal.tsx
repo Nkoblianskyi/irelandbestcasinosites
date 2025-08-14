@@ -51,11 +51,11 @@ export function TopOffersModal() {
               <CardContent className="p-4 flex flex-col items-center text-center h-full pt-8 bg-zinc-950 text-white">
                 <div className="flex-grow flex flex-col items-center">
                   {/* Logo adjustments */}
-                  <div className="bg-white p-2 rounded-lg shadow-sm mb-3 flex items-center justify-center w-32 h-32 border border-zinc-700">
+                  <div className="bg-white p-2 rounded-lg shadow-sm mb-3 flex items-center justify-center w-40 h-40 border border-zinc-700">
                     <Image
                       src={topSite.logo || "/placeholder.svg"}
                       alt={topSite.name}
-                      width={120}
+                      width={140}
                       height={80}
                       className="object-contain max-h-full max-w-full"
                     />
