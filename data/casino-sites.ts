@@ -20,7 +20,7 @@ export const casinoSites: CasinoSite[] = [
     bonus: "100% up to €200 + 20 EXTRA SPINS",
     features: ["Casino & Sports", "Irish Market", "Simple UX"],
     paymentMethods: ["Visa/Mastercard", "PayPal", "Bank Transfer"],
-    link: "https://qualityboost.top/X4HRDp1p",
+    link: "https://ie.mrplay.com/",
     reviews: 8743,
   },
   {
@@ -31,7 +31,7 @@ export const casinoSites: CasinoSite[] = [
     bonus: "Bet €10 Get €30 + 30 Free Spins",
     features: ["Competitive Odds", "Cash Out", "Bet Builder"],
     paymentMethods: ["Visa/Mastercard", "PayPal", "Apple Pay"],
-    link: "https://qualityboost.top/wtcwZ279",
+    link: "https://www.betvictor.com/en-ie",
     reviews: 7892,
   },
   {
@@ -64,7 +64,7 @@ export const casinoSites: CasinoSite[] = [
     bonus: "Bet €10 Get 200 Free Spins",
     features: ["Fast Payouts", "Best Odds", "Live Streaming"],
     paymentMethods: ["Visa/Mastercard", "PayPal", "Bank Transfer"],
-    link: "https://qualityboost.top/Qf9fryTn",
+    link: "https://www.betfred.com/",
     reviews: 4967,
   },
   {
@@ -75,7 +75,7 @@ export const casinoSites: CasinoSite[] = [
     bonus: "Bet €10 Get €60 Casino Bonus",
     features: ["Irish Owned", "GAA Specials", "Local Support"],
     paymentMethods: ["Visa/Mastercard", "PayPal", "Bank Transfer"],
-    link: "https://qualityboost.top/VdyVNDBr",
+    link: "https://www.boylesports.com/",
     reviews: 3756,
   },
 ]
