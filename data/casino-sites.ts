@@ -48,7 +48,7 @@ export const casinoSites: CasinoSite[] = [
   {
     id: "midnite",
     name: "Midnite",
-    logo: "/midnite.webp",
+    logo: "/mid.svg",
     score: 4.5,
     bonus: "Bet €20 Get 100 Free Spins",
     features: ["Esports Focus", "Modern Interface", "Fast Withdrawals"],
