@@ -70,7 +70,7 @@ export const casinoSites: CasinoSite[] = [
   {
     id: "boylesports-games",
     name: "BoyleSports Games",
-    logo: "/boylesports.png",
+    logo: "/boyle.png",
     score: 4.3,
     bonus: "Bet €10 Get €60 Casino Bonus",
     features: ["Irish Owned", "GAA Specials", "Local Support"],
