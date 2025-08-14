@@ -10,74 +10,72 @@ export interface CasinoSite {
   link: string
 }
 
-// Базові дані казино з нового зображення
-const baseCasinoSites: Omit<CasinoSite, "reviews" | "score" | "id" | "features" | "paymentMethods">[] = [
+
+export const casinoSites: CasinoSite[] = [
   {
+    id: "mr-play",
     name: "Mr.Play",
     logo: "/mrplay.png",
+    score: 4.8,
     bonus: "100% up to €200 + 20 EXTRA SPINS",
+    features: ["Casino & Sports", "Irish Market", "Simple UX"],
+    paymentMethods: ["Visa/Mastercard", "PayPal", "Bank Transfer"],
     link: "https://qualityboost.top/X4HRDp1p",
+    reviews: 8743,
   },
   {
+    id: "betvictor",
     name: "BetVictor",
     logo: "/betvictor.png",
+    score: 4.7,
     bonus: "Bet €10 Get €30 + 30 Free Spins",
+    features: ["Competitive Odds", "Cash Out", "Bet Builder"],
+    paymentMethods: ["Visa/Mastercard", "PayPal", "Apple Pay"],
     link: "https://qualityboost.top/wtcwZ279",
+    reviews: 7892,
   },
   {
+    id: "betiton",
     name: "Betiton",
     logo: "/betiton.png",
+    score: 4.6,
     bonus: "100% up to €500 + 150 Spins",
+    features: ["Irish Focus", "Best Prices", "Mobile App"],
+    paymentMethods: ["Visa/Mastercard", "PayPal", "Apple Pay"],
     link: "https://www.betiton.com/en-ie/sport/",
+    reviews: 6521,
   },
   {
+    id: "midnite",
     name: "Midnite",
-    logo: "/mid.svg",
+    logo: "/midnite.webp",
+    score: 4.5,
     bonus: "Bet €20 Get 100 Free Spins",
+    features: ["Esports Focus", "Modern Interface", "Fast Withdrawals"],
+    paymentMethods: ["Visa/Mastercard", "Skrill", "Neteller"],
     link: "https://qualityboost.top/F4RQFdWr",
+    reviews: 5834,
   },
   {
+    id: "betfred",
     name: "BetFred",
     logo: "/betfred.png",
+    score: 4.4,
     bonus: "Bet €10 Get 200 Free Spins",
+    features: ["Fast Payouts", "Best Odds", "Live Streaming"],
+    paymentMethods: ["Visa/Mastercard", "PayPal", "Bank Transfer"],
     link: "https://qualityboost.top/Qf9fryTn",
+    reviews: 4967,
   },
   {
+    id: "boylesports-games",
     name: "BoyleSports Games",
-    logo: "/boyle.png",
+    logo: "/boylesports.png",
+    score: 4.3,
     bonus: "Bet €10 Get €60 Casino Bonus",
+    features: ["Irish Owned", "GAA Specials", "Local Support"],
+    paymentMethods: ["Visa/Mastercard", "PayPal", "Bank Transfer"],
     link: "https://qualityboost.top/VdyVNDBr",
+    reviews: 3756,
   },
 ]
-
-// Функція для генерації випадкового числа в діапазоні
-function getRandomArbitrary(min: number, max: number) {
-  return Math.random() * (max - min) + min
-}
-
-// Функція для генерації випадкового цілого числа (не круглого)
-function getRandomInt(min: number, max: number) {
-  return Math.floor(Math.random() * (max - min + 1)) + min
-}
-
-// Генеруємо випадкові рейтинги та відгуки, потім сортуємо
-export const casinoSites: CasinoSite[] = baseCasinoSites
-  .map((site) => {
-    // Рейтинг від 3.7 до 4.9 з одним десятковим знаком (не круглі числа)
-    const score = Number.parseFloat(getRandomArbitrary(3.7, 4.9).toFixed(1))
-    // Відгуки від 1247 до 9876 (не круглі числа)
-    const reviews = getRandomInt(1247, 9876)
-
-    return {
-      ...site,
-      id: site.name
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/^-|-$/g, ""), // Генеруємо slug-id
-      score,
-      reviews,
-      features: [], // Залишаємо порожніми
-      paymentMethods: [], // Залишаємо порожніми
-    }
-  })
-  .sort((a, b) => b.score - a.score) // Сортуємо за рейтингом у спадному порядку
