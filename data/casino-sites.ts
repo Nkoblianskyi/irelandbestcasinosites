@@ -42,7 +42,7 @@ export const casinoSites: CasinoSite[] = [
     bonus: "100% up to €500 + 150 Spins",
     features: ["Irish Focus", "Best Prices", "Mobile App"],
     paymentMethods: ["Visa/Mastercard", "PayPal", "Apple Pay"],
-    link: "https://www.betiton.com/en-ie/sport/",
+    link: "https://www.betiton.com/en-ie/",
     reviews: 6521,
   },
   {
@@ -53,7 +53,7 @@ export const casinoSites: CasinoSite[] = [
     bonus: "Bet €20 Get 100 Free Spins",
     features: ["Esports Focus", "Modern Interface", "Fast Withdrawals"],
     paymentMethods: ["Visa/Mastercard", "Skrill", "Neteller"],
-    link: "https://qualityboost.top/F4RQFdWr",
+    link: "https://www.midnite.com/",
     reviews: 5834,
   },
   {
